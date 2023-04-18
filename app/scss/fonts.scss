@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto&display=swap');
+
+$title-font-family: 'Play', sans-serif;
+$paragraph-font-family: 'Roboto', sans-serif;
+
+$font-family-sans-serif: $paragraph-font-family;
+$font-family-monospace: 'Inconsolata', monospace;
+$font-family-base: $font-family-sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font-family;
+}
+
+p {
+  font-family: $paragraph-font-family;
+}
+
+button {
+  font-family: $title-font-family;
+}
+
+a {
+  font-family: $title-font-family;
+}

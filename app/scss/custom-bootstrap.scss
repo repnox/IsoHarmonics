@@ -1,0 +1,100 @@
+@import "fonts";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Theme Colors, Originally based on https://colorhunt.co/palette/13005a00337c1c82ad03c988
+$body-bg: $gray-800;
+$body-color: $gray-100;
+
+$primary: #DDFFBB;
+$secondary: #B9E9FC;
+$secondary-dark: #62CDFF;
+$theme-colors: (
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+);
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
+}
+
+// Border Radius
+$border-radius: .75em;
+$border-radius-lg: 1em;
+$border-radius-sm: .5em;
+
+// Links
+$link-color: $primary;
+$link-hover-color: $primary;
+
+// Cards
+$card-bg: $gray-900;
+$card-color: $gray-400;
+$card-border-radius: $border-radius-lg;
+
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+
+// Buttons
+@import "node_modules/bootstrap/scss/buttons";
+$btn-border-radius: $border-radius-sm;
+.btn-primary {
+  @include button-variant(
+    $background: $primary,
+    $border: $primary,
+    $hover-background: lighten($primary, 10%),
+    $hover-border: lighten($primary, 10%)
+  );
+  font-family: $title-font-family;
+}
+.btn-secondary {
+  @include button-variant(
+    $background: $secondary,
+    $border: $secondary,
+    $hover-background: $secondary-dark,
+    $hover-border: $secondary-dark
+  );
+  font-family: $title-font-family;
+}
+
+
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/print";
+

@@ -22,7 +22,7 @@ brunch new -s vue
 
 ### Manual Install
 
-You can clone this repo manually!
+You can clone this repo manually! <-This is painful
 
 ## Getting Started
 
