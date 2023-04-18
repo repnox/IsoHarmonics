@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Welcome from "../components/Welcome";
+import WelcomePage from "../components/WelcomePage";
+import ProjectsPage from "../components/project/ProjectsPage";
+import NotFoundPage from "../components/NotFoundPage";
 
 Vue.use(Router)
 
@@ -10,10 +12,26 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Welcome,
+      component: WelcomePage,
       meta: {
         title: 'IsoHarmonics - Homepage'
       }
-    }
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: ProjectsPage,
+      meta: {
+        title: 'IsoHarmonics - Projects'
+      }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: '404',
+      component: NotFoundPage,
+      meta: {
+        title: 'IsoHarmonics - 404 Page Not Found'
+      }
+    },
   ]
 })

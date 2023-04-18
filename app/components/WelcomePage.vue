@@ -14,7 +14,7 @@
             </p>
 
             <div class="text-center">
-              <b-button variant="secondary" class="btn-shiny">Open a Sample Project!</b-button>
+              <b-button @click="routeTo('projects')" variant="secondary" class="btn-shiny">Open a Sample Project!</b-button>
             </div>
 
             <h2 class="mt-4">Why?</h2>
@@ -62,7 +62,7 @@
             </p>
 
             <div class="text-center">
-              <b-button variant="secondary" class="btn-shiny">Try it!</b-button>
+              <b-button @click="routeTo('projects')" variant="secondary" class="btn-shiny">Try it!</b-button>
             </div>
 
             <h2 class="mt-4">Microtonal?</h2>
@@ -86,7 +86,15 @@
 </template>
 
 <script>
+
+import router from "../router";
+
 export default {
+  methods: {
+    routeTo(routeName) {
+      router.push({name: routeName});
+    }
+  }
 }
 </script>
 
