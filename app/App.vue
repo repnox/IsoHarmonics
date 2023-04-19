@@ -1,6 +1,9 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app" class="my-5">
+    <transition name="fade">
+      <router-view>
+      </router-view>
+    </transition>
   </div>
 </template>
 
@@ -14,6 +17,15 @@
           document.title = to.meta.title || 'IsoHarmonics';
         }
       },
+    },
+    methods: {
+      getTransitionName(route) {
+        const defaultTransition = 'fade';
+        if (route && route.meta) {
+          return route.meta.transition || defaultTransition;
+        }
+        return defaultTransition;
+      }
     }
   }
 

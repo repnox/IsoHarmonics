@@ -4,23 +4,8 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-// Theme Colors, Originally based on https://colorhunt.co/palette/13005a00337c1c82ad03c988
-$body-bg: $gray-800;
-$body-color: $gray-100;
-
-$primary: #DDFFBB;
-$secondary: #B9E9FC;
-$secondary-dark: #62CDFF;
-$theme-colors: (
-        "primary":    $primary,
-        "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
-        "light":      $light,
-        "dark":       $dark
-);
+// Theme colors
+@import "custom-theme";
 
 h1, h2, h3, h4, h5, h6 {
   color: $primary;
@@ -36,9 +21,7 @@ $link-color: $primary;
 $link-hover-color: $primary;
 
 // Cards
-$card-bg: $gray-900;
-$card-color: $gray-400;
-$card-border-radius: $border-radius-lg;
+@import "custom-cards";
 
 @import "node_modules/bootstrap/scss/root";
 @import "node_modules/bootstrap/scss/reboot";
