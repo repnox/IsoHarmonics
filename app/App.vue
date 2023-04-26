@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="my-5">
+  <div id="app">
     <transition name="fade">
       <router-view>
       </router-view>

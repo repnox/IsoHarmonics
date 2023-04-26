@@ -10,6 +10,7 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
+  padding-top: .8em !important;
 }
 
 .btn-shiny:before {
@@ -27,6 +28,10 @@
   opacity: 0;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
+}
+
+.btn-primary.btn-shiny:before {
+  background: linear-gradient(45deg, #DDFFBB, #C7E9B0, #B3C99C, #DDFFBB);
 }
 
 .btn-shiny:active {

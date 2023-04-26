@@ -12,20 +12,23 @@
           </p>
         </div>
         <div class="flex-grow-0">
-          <b-button variant="primary" class="btn-shiny shadow">Open</b-button>
+          <b-button :to="{name:'harmonicsTutorial'}" variant="primary" class="btn-shiny shadow">Open</b-button>
         </div>
       </div>
     </b-card>
     <p class="mt-5">
-      IsoHarmonics is still under development. Please excuse the bugs and lack of content.
+      IsoHarmonics is alpha-v0. Please excuse the bugs and lack of content.
     </p>
   </page-container>
 </template>
 
 <script>
 import PageContainer from "../ui/PageContainer";
+
 export default {
-  components: {PageContainer}
+  components: {PageContainer},
+  methods: {
+  }
 }
 </script>
 
