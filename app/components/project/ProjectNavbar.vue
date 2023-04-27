@@ -4,8 +4,9 @@
       <b-navbar-brand>
         <b-link :to="{name:'home'}" class="font-weight-bold">ISO-H</b-link>
       </b-navbar-brand>
-      <b-nav-item-dropdown text="File">
+      <b-nav-item-dropdown text="Project">
         <b-dropdown-item :to="{name:'projects'}" variant="charcoal">Open</b-dropdown-item>
+        <b-dropdown-item :to="{name:'home'}" variant="charcoal">Exit</b-dropdown-item>
       </b-nav-item-dropdown>
     </b-navbar-nav>
   </b-navbar>
